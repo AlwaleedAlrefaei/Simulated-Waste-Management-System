@@ -1,59 +1,60 @@
-## Getting Started
+# 🗑️ Simulated Waste Management System
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## 📖 Overview
+The **Simulated Waste Management System** is a smart city project designed to optimize waste collection processes using **IoT sensors**, **data analytics**, and **route optimization algorithms**. It monitors bin levels in real time, predicts collection needs, and generates the most efficient routes for waste trucks — reducing fuel consumption, saving time, and minimizing environmental impact.
 
-## Folder Structure
+---
 
-The workspace contains two folders by default, where:
+## 🚀 Features
+- **Real-time Monitoring:** IoT sensors track bin fill levels and send live data to the system.  
+- **Predictive Analytics:** Uses machine learning to forecast when bins will reach capacity.  
+- **Route Optimization:** Generates the shortest and most efficient routes for waste trucks.  
+- **Central Database:** Stores bin data, collection schedules, and truck routes securely.  
+- **Administrator Dashboard:** Allows municipalities to view reports, update data, and monitor performance.  
+- **Scalable Design:** Can be extended to multiple cities or integrated with real IoT devices.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+---
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## 🧩 System Architecture
+The system consists of the following main components:
+1. **IoT Sensors** – Detect waste levels in bins and send data to the server.  
+2. **Central Server** – Processes incoming data, runs predictive algorithms, and manages routes.  
+3. **Truck Interface** – Displays optimized collection routes to drivers.  
+4. **Administrator Dashboard** – Provides access to system reports and analytics.  
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+---
 
-## Dependency Management
+## 🔄 Software Engineering Process
+This project was developed using the **Agile Iterative Model**, allowing for flexibility, feedback, and continuous improvement.  
+### Development Sprints:
+1. **Sprint 1:** Requirements gathering and UML design  
+2. **Sprint 2:** IoT data simulation and database setup  
+3. **Sprint 3:** Route optimization algorithm  
+4. **Sprint 4:** Dashboard and reporting system  
+5. **Sprint 5:** Integration, testing, and documentation  
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+---
 
-## Upgrading to Java 21 (LTS)
+## 📊 UML Diagrams
+- Use Case Diagram  
+- Activity Diagram  
+- Sequence Diagram  
+- Class Diagram  
+- State Diagram  
+These diagrams illustrate how the system components interact to manage waste efficiently.
 
-This project can be built with Java 21 (current LTS). Below are recommended steps to install a JDK 21 on Windows, verify the installation, and configure the project in Visual Studio Code.
+---
 
-1) Install a JDK 21 distribution (examples):
+## ⚙️ Installation & Setup
+```bash
+# 1. Clone the repository
+git clone https://github.com/your-username/Simulated-Waste-Management-System.git
 
-- Using winget (Windows Package Manager) — open PowerShell as Administrator and run one of the following (choose the provider you prefer):
+# 2. Navigate to the project directory
+cd Simulated-Waste-Management-System
 
-	# Use Eclipse Temurin (Adoptium)
-	winget install --id EclipseAdoptium.Temurin.21 -e
+# 3. Install dependencies
+npm install  # or pip install -r requirements.txt
 
-	# Or use Microsoft Build of OpenJDK 21
-	winget install --id Microsoft.OpenJDK.21 -e
-
-	If you prefer Chocolatey, use `choco install temurin21jdk` (or the package id you trust).
-
-2) Set JAVA_HOME and update PATH (PowerShell example):
-
-	$env:JAVA_HOME = 'C:\Program Files\Eclipse Adoptium\jdk-21'  # adjust path to where your JDK installed
-	[Environment]::SetEnvironmentVariable('JAVA_HOME', $env:JAVA_HOME, 'Machine')
-	$oldPath = [Environment]::GetEnvironmentVariable('Path', 'Machine')
-	if (-not $oldPath.Contains("%JAVA_HOME%")) {
-			[Environment]::SetEnvironmentVariable('Path', "$oldPath;${env:JAVA_HOME}\bin", 'Machine')
-	}
-
-3) Verify the installation in a new PowerShell session:
-
-	java -version
-	javac -version
-
-Both should report version 21 (for example: openjdk version "21.0.1" 2024-09-17).
-
-4) Project configuration options
-
-- Gradle: A `build.gradle` is provided in the project root that configures the Gradle Java toolchain to target Java 21. If you use Gradle, run `gradle build` (or generate/refresh the Gradle wrapper).
-- VS Code: You can point VS Code to your JDK 21 by creating (or editing) `.vscode/settings.json` and adding an entry under `java.configuration.runtimes` with the actual installation path. An example file is included in this repository.
-
-Notes:
-- You may need to restart VS Code after installing a new JDK so the Java extension picks up the new runtime.
-- If you're using an IDE (IntelliJ/Eclipse) configure the project's SDK/JDK to use Java 21.
+# 4. Run the application
+npm start  # or python app.py
