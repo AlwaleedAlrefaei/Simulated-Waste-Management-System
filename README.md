@@ -48,7 +48,7 @@ These diagrams illustrate how the system components interact to manage waste eff
 ## ⚙️ Installation & Setup
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/Simulated-Waste-Management-System.git
+git clone https://github.com/AlwaleedAlrefaei/Simulated-Waste-Management-System.git
 
 # 2. Navigate to the project directory
 cd Simulated-Waste-Management-System
