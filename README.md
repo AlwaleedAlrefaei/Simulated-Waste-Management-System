@@ -57,4 +57,4 @@ cd Simulated-Waste-Management-System
 npm install  # or pip install -r requirements.txt
 
 # 4. Run the application
-npm start  # or python app.py
+npm start  
