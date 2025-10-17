@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.example'
+version = '1.0.0'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+    withSourcesJar()
+}
+
+tasks.withType(JavaCompile) {
+    options.release = 21
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // No external dependencies currently; add as needed
+}
